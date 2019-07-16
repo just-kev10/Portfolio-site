@@ -1,0 +1,30 @@
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 56px;
+    max-height: 80px;
+    transition: min-height 0.3s;
+}
+
+@media screen and (max-width: 360px) {
+    .header__menu {
+        display: inline-block;
+        width: 10vw;
+        margin-top: 18px;
+    }
+
+    .header__logo {
+        display: inline-block;
+        width: 10vw;
+        vertical-align: top;
+        margin: 0;
+    }
+
+    .header__title {
+        margin-top: 24px;
+        font-size: 1.5em;
+        display: inline-block;
+        width: 70vw;
+        text-align: center;
+        vertical-align: top;
+    }
+}

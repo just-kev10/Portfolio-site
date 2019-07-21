@@ -1,3 +1,4 @@
+/* Breakpoint for devices with a minimum width of 768px and a maximum width off 1024px */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     .section_titles {
         text-align: left;
@@ -19,7 +20,7 @@
     }
 
     .header {
-        width: 100vw;
+        width: 98vw;
         height: 15vh;
         max-height: 20vh;
         min-height: 10vh;
@@ -52,13 +53,12 @@
         margin-top: calc((15vh- 48pt)/2);
         margin-bottom: 0px;
         margin-right: 0px;
-        width: 64vw;
+        width: 60vw;
 
     }
 
     .featured_work_projects {
-        width: 85vw;
-        height: 35vh;
+        width: 60vw;
     }
 
     .fbox-icon {
@@ -106,5 +106,139 @@
         display: block;
         margin-top: 300px;
         text-align: center;
+    }
+}
+
+/* Breakpoint for devices with a greater width than 1024px */
+@media only screen and (min-width : 1025px) {
+
+    body,
+    .header {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section_titles {
+        text-align: left;
+        font-size: 26pt;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 14pt;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .fbox-title {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    .header {
+        width: 1024px;
+        height: 150px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__logo {
+        display: inline-block;
+        height: 100px;
+        width: 200px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .header__inner {
+        height: 150px;
+    }
+
+    .header__title {
+        display: inline-block;
+        font-family: 'Satisfy', cursive;
+        font-size: 38pt;
+        text-align: center;
+        margin-left: 25px;
+        margin-top: calc((150px - 48pt)/2);
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: calc(1024px - 200px - 54px);
+
+    }
+
+    .about_work {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .featured_work_projects {
+        width: calc((1024px - 60px) / 3);
+        height: 200px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .featured_work:not(:first-of-type) {
+        margin-top: 0%;
+    }
+
+    .fbox-icon {
+        margin-top: 100px;
+        width: 100px;
+        min-width: 90px;
+        height: 100px;
+    }
+
+    .icon-img {
+        margin-top: 25px;
+        width: 50px;
+        height: 50px;
+        min-width: 45px;
+        color: white;
+    }
+
+    .fbox-icon:hover {
+        background-color: #36b7b3;
+        width: calc(100px * 1.1);
+        height: calc(100px * 1.1);
+    }
+
+    .fbox-icon2:hover {
+        background-color: #36b7b3;
+        width: calc(150px * 1.1);
+        height: calc(150px * 1.1);
+    }
+
+
+    .fbox-icon2 {
+        width: 150px;
+        min-width: 140px;
+        height: 150px;
+    }
+
+    .icon-img2 {
+        margin-top: 35px;
+        width: 75px;
+        height: 75px;
+        min-width: 70px;
+    }
+
+    .fbox-title2 {
+        font-size: 24pt;
+        display: block;
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 200px;
     }
 }

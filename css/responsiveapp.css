@@ -1,160 +1,110 @@
-.header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    min-width: 344px;
-    min-height: 56px;
-    max-height: 80px;
-    transition: min-height 0.3s;
-    position: static;
-}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .section_titles {
+        text-align: left;
+        font-size: 36pt;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
-main {
-    min-width: 344px;
-    min-height: 1200px;
-    max-height: 1300px;
-}
+    p {
+        text-align: justify;
+        font-size: 24pt;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
-@media screen and (max-width: 360px) {
+    .fbox-title {
+        font-size: 24pt;
+        text-align: center;
+    }
+
+    .header {
+        width: 100vw;
+        height: 15vh;
+        max-height: 20vh;
+        min-height: 10vh;
+        transition: min-height 0.3s;
+    }
+
     .header__menu {
-        display: inline-block;
-        width: 8vw;
-        margin-top: 24px;
-        margin-left: 2.8vw;
-        min-width: 25px;
+        display: none;
     }
 
     .header__logo {
-        min-width: 40px;
         display: inline-block;
-        width: 12vw;
-        vertical-align: top;
-        margin: 0 0 0 2.8vw;
+        height: 100px;
+        width: 15vw;
+        margin-top: calc((15vh - 100px)/2);
+        margin-left: 10vw;
+    }
+
+    .header__inner {
+        height: 15vh;
+
     }
 
     .header__title {
-        margin-left: 2.8vw;
-        font-family: 'Satisfy', cursive;
-        margin-top: 24px;
-        font-size: 1.5em;
         display: inline-block;
-        width: 64.94vw;
-        min-width: 233px;
+        font-family: 'Satisfy', cursive;
+        font-size: 48pt;
         text-align: center;
-        vertical-align: top;
-    }
+        margin-left: 10vw;
+        margin-top: calc((15vh- 48pt)/2);
+        margin-bottom: 0px;
+        margin-right: 0px;
+        width: 64vw;
 
-    .main_logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        width: 80vw;
-        min-width: 280px;
-        border-radius: 10%;
     }
 
     .featured_work_projects {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        width: 60vw;
-        border-radius: 10%;
+        width: 85vw;
+        height: 35vh;
     }
 
-    .feature-box {
-        display: inline-block;
-        position: relative;
-        padding: 0;
-        width: 100%;
+    .fbox-icon {
+        margin-top: 100px;
+        width: 150px;
+        min-width: 140px;
+        height: 150px;
+    }
+
+    .icon-img {
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+        min-width: 90px;
+        color: white;
     }
 
     .fbox-icon:hover {
         background-color: #36b7b3;
-        width: calc(60px * 1.1);
-        height: calc(60px * 1.1);
-    }
-
-    .fbox-icon {
-        margin-top: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60px;
-        min-width: 50px;
-        height: 60px;
-        background-color: #5ec5c2;
-        border-radius: 50%;
-        -webkit-transition: width 1s;
-        -webkit-transition: height 1s;
-        /* For Safari 3.1 to 6.0 */
-        transition: height 1s;
-        transition: width 1s;
-    }
-
-    .fbox-title {
-        text-align: center;
-    }
-
-    .icon-img {
-        display: block;
-        margin-top: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10vw;
-        min-width: 30px;
-        color: white;
-    }
-
-    .featured_work:not(:first-of-type) {
-        margin-top: 20%;
+        width: calc(150px * 1.1);
+        height: calc(150px * 1.1);
     }
 
     .fbox-icon2:hover {
         background-color: #36b7b3;
-        width: calc(96px * 1.1);
-        height: calc(96px * 1.1);
+        width: calc(200px * 1.1);
+        height: calc(200px * 1.1);
     }
 
-    .feature-box2 {
-        display: inline-block;
-        margin-top: -50px;
-        position: relative;
-        padding: 0;
-        width: 49.3%;
-    }
 
     .fbox-icon2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 96px;
-        min-width: 90px;
-        height: 96px;
-        border: solid #5ec5c2;
-        /* background-color: #5ec5c2; */
-        border-radius: 50%;
-        -webkit-transition: width 1s;
-        -webkit-transition: height 1s;
-        /* For Safari 3.1 to 6.0 */
-        transition: height 1s;
-        transition: width 1s;
+        min-width: 200px;
+        height: 200px;
     }
 
     .icon-img2 {
-        display: block;
-        margin-top: 4.5vh;
-        margin-left: auto;
-        margin-right: auto;
-        width: 12vw;
-        min-width: ;
-        color: white;
+        margin-top: 35px;
+        width: 125px;
+        height: 125px;
+        min-width: 115px;
     }
 
     .fbox-title2 {
+        font-size: 24pt;
         display: block;
-        margin-top: 150px;
+        margin-top: 300px;
         text-align: center;
     }
 }

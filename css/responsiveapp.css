@@ -20,8 +20,8 @@
     }
 
     .nav__list {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     }
 
     a .nav__item {
@@ -105,7 +105,7 @@
         font-size: 48pt;
         text-align: center;
         margin-left: 10vw;
-        margin-top: calc((15vh- 48pt)/2);
+        margin-top: calc((15vh - 48pt)/2);
         margin-bottom: 0px;
         margin-right: 0px;
         width: 60vw;

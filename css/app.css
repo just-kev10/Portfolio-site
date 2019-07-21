@@ -51,7 +51,7 @@ footer {
 }
 
 .header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
     min-width: 344px;
     min-height: 56px;
     transition: min-height 0.3s;
@@ -116,7 +116,7 @@ main {
 .feature-box {
     display: inline-block;
     position: relative;
-    padding: 0;
+    padding: 0px;
     width: 100%;
 }
 
@@ -173,7 +173,7 @@ main {
     display: inline-block;
     margin-top: -50px;
     position: relative;
-    padding: 0;
+    padding: 0px;
     width: 49.3%;
 }
 
@@ -209,4 +209,8 @@ main {
     display: block;
     margin-top: 150px;
     text-align: center;
+}
+
+article h2 {
+    display: none;
 }

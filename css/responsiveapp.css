@@ -51,6 +51,10 @@
 
 /* Breakpoint for devices with a minimum width of 768px and a maximum width off 1024px */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .nav {
+        display: none;
+    }
+
     .section_titles {
         text-align: left;
         font-size: 36pt;
@@ -166,6 +170,9 @@
 
 /* Breakpoint for devices with a greater width than 1024px */
 @media only screen and (min-width : 1025px) {
+    .nav {
+        display: none;
+    }
 
     body,
     .header {

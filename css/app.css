@@ -1,4 +1,4 @@
-body {
+body .nav {
     background-color: #b8c6db;
     background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 }
@@ -23,6 +23,12 @@ footer {
 
 p {
     text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p.fbox_description {
+    text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -120,7 +126,7 @@ main {
 }
 
 .fbox-icon {
-    margin-top: 50px;
+    margin-top: 65px;
     position: absolute;
     top: 50%;
     left: 50%;

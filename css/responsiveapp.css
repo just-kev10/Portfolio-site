@@ -1,3 +1,54 @@
+/*Breakpoint for devices with a minimum width of 768px */
+@media screen and (max-width: 768px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-55vw, 0);
+        transform: translate(-55vw, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+        border-radius: 10%;
+    }
+
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    a .nav__item {
+        text-decoration: none;
+    }
+
+    .nav__list .nav__item:hover {
+        background-color: #a2b3ce;
+        background-image: linear-gradient(315deg, #a2b3ce 0%, #f5f7fa 74%);
+    }
+
+    .nav__item {
+        display: block;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: auto;
+        margin-left: auto;
+        height: 10vh;
+        list-style-type: none;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        font-family: 'Lobster', cursive;
+        text-align: left;
+        font-size: 1.1em;
+    }
+}
+
 /* Breakpoint for devices with a minimum width of 768px and a maximum width off 1024px */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     .section_titles {
@@ -62,7 +113,7 @@
     }
 
     .fbox-icon {
-        margin-top: 100px;
+        margin-top: 150px;
         width: 150px;
         min-width: 140px;
         height: 150px;
@@ -106,6 +157,10 @@
         display: block;
         margin-top: 300px;
         text-align: center;
+    }
+
+    footer {
+        margin-top: 15vh;
     }
 }
 

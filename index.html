@@ -28,8 +28,21 @@
             <h1 class="header__title">Kevin Alcerro</h1>
         </div>
     </header>
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <a href="#about">
+                <li class="nav__item" href="#about">About me</li>
+            </a>
+            <a href="#projects">
+                <li class="nav__item">Featured projects</li>
+            </a>
+            <a href="#contact">
+                <li class="nav__item">Contact information</li>
+            </a>
+        </ul>
+    </nav>
     <main>
-        <section class="about_me">
+        <section id="about" class="about_me">
             <img class="main_logo" src="img/Developer.jpg" alt="main logo">
             <article>
                 <h2 class="section_titles">About me</h2>
@@ -40,8 +53,8 @@
                 </p>
             </article>
         </section>
-        <h2 class="section_titles">Projects</h2>
-        <section class="about_work">
+        <h2 class="section_titles">Featured projects</h2>
+        <section id="projects" class="about_work">
             <div class="featured_work">
                 <div class="about_work_container">
                     <img class="featured_work_projects" src="img/Pixel-art-maker.png" alt="Pixel-art-maker">
@@ -51,6 +64,9 @@
                                 <img class="icon-img" src="img/Github.svg" alt="GitHub">
                             </div>
                         </a>
+                        <p class="fbox_description">
+                            Html, css and javascript app.
+                        </p>
                         <h3 class="fbox-title">Pixel art maker</h3>
                     </div>
                 </div>
@@ -64,6 +80,9 @@
                                 <img class="icon-img" src="img/Github.svg" alt="GitHub">
                             </div>
                         </a>
+                        <p class="fbox_description">
+                            Python text-based game.
+                        </p>
                         <h3 class="fbox-title">Adventure game</h3>
                     </div>
                 </div>
@@ -77,13 +96,16 @@
                                 <img class="icon-img" src="img/Github.svg" alt="GitHub">
                             </div>
                         </a>
+                        <p class="fbox_description">
+                            Python text-based game.
+                        </p>
                         <h3 class="fbox-title">Rock paper scissors</h3>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <h2 class="section_titles">Contact</h2>
+        <footer id="contact">
+            <h2 class="section_titles">Contact information</h2>
             <div>
                 <div class="feature-box2">
                     <a href="https://www.linkedin.com/in/kevin-alcerro/">
@@ -104,6 +126,7 @@
             </div>
         </footer>
     </main>
+    <script src="designs.js"></script>
 </body>
 
 </html>
